@@ -28,11 +28,12 @@
         "workspaces"
       ],
       "middle": [
-        "clock"
+        "clock",
+        "media",
+        "cava"
       ],
       "right": [
         "volume",
-        "battery",
         "network",
         "notifications",
         "kbinput"
