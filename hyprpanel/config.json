@@ -33,6 +33,8 @@
         "cava"
       ],
       "right": [
+        "bluetooth",
+        "battery",
         "volume",
         "network",
         "notifications",
