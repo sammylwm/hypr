@@ -1,4 +1,5 @@
 alias c="clear"
 alias ls="exa"
 alias aliascf="nano ~/hypr/aliases/alias"
-alias hs="history | grep "
+alias hs="history | grep --color=auto "
+alias sshp="ssh admin_server@lednevs.ru -p 1009"
