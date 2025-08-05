@@ -18,6 +18,7 @@
     "custom/vpn",
     "hyprland/language",
     "pulseaudio",
+    "custom/notifications",
     "separator",
     "tray"
   ],
@@ -155,5 +156,13 @@
   "custom/webmenu": {
     "format": "🌐",
     "on-click": "/home/sammy/hypr/waybar/sites.sh"
+  },
+  "custom/notifications": {
+    "format": "󰂚",
+    "tooltip": "Открыть центр уведомлений",
+    "on-click": "swaync-client -t",
+    "return-type": "json",
+    "exec": "echo '{\"text\":\"\",\"class\":\"notifications\"}'",
+    "interval": 30
   }
 }

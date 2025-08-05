@@ -59,6 +59,7 @@ tooltip {
 #memory,
 #disk,
 #custom-webmenu,
+#custom-notifications,
 #tray {
     background: #1e1e2e;
     opacity: 1.0;
@@ -141,6 +142,11 @@ tooltip {
 }
 
 #custom-webmenu {
+    border-radius: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#custom-notifications {
     border-radius: 13px;
     margin-left: 5px;
     margin-right: 5px;
