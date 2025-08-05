@@ -2,7 +2,7 @@
 * {
     border: none;
     border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font", serif;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
     font-weight: bold;
     font-size: 20px;
     min-height: 0;
@@ -35,21 +35,6 @@ tooltip {
     color: #89b4fa;
 }
 
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 13px;
-}
-
-
-#workspaces button.persistent {
-    color: #f9e2af;
-}
-
-
-#workspaces button.empty {
-    color: #313244;
-}
 
 #workspaces button.active,
 #workspaces button.visible {
