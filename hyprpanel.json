@@ -127,8 +127,6 @@
   "menus.dashboard.shortcuts.enabled": true,
   "menus.dashboard.directories.enabled": false,
   "bar.customModules.storage.labelType": "free",
-  "bar.customModules.weather.label": false,
-  "theme.bar.buttons.modules.weather.enableBorder": false,
   "theme.bar.buttons.network.enableBorder": false,
   "bar.network.showWifiInfo": true,
   "bar.bluetooth.label": false,
@@ -139,5 +137,5 @@
   "bar.media.show_active_only": true,
   "bar.battery.hideLabelWhenFull": false,
   "bar.network.truncation": false,
-  "menus.volume.raiseMaximumVolume": false
+  "menus.volume.raiseMaximumVolume": false,
 }
