@@ -4,7 +4,7 @@
     border-radius: 10px;
     font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     min-height: 0;
 }
 
@@ -58,6 +58,7 @@ tooltip {
 #tray,
 #memory,
 #disk,
+#custom-webmenu,
 #tray {
     background: #1e1e2e;
     opacity: 1.0;
@@ -139,3 +140,8 @@ tooltip {
     margin-right: 5px;
 }
 
+#custom-webmenu {
+    border-radius: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

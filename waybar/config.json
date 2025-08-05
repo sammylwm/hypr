@@ -14,6 +14,7 @@
     "clock"
   ],
   "modules-right": [
+    "custom/webmenu",
     "custom/vpn",
     "hyprland/language",
     "pulseaudio",
@@ -38,11 +39,14 @@
     "format-window-separator": " ",
     "window-rewrite-default": "",
     "window-rewrite": {
+      ".*Prism.*": "\uDB80\uDF73",
       ".*Nautilus.*": "\uF114",
       ".*Spotify.*": "",
+      ".*Studio.*": "\uE71A",
       ".*kitty.*": "\uF489",
       ".*org.kde.kate.*": "󰈙",
       ".*ayugram.*": "\uF2C6",
+      ".*jetbrains-idea.*": "\uE7B5",
       ".*jetbrains-pycharm.*": "\uE877",
       ".*Chromium.*": ""
     },
@@ -147,5 +151,9 @@
     "interval": 5,
     "on-click": "/home/sammy/vpn/vpn-toggle.sh",
     "name": "vpn"
+  },
+  "custom/webmenu": {
+    "format": "🌐",
+    "on-click": "/home/sammy/hypr/waybar/sites.sh"
   }
 }
