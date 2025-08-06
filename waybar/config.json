@@ -16,6 +16,7 @@
   "modules-right": [
     "custom/webmenu",
     "custom/vpn",
+    "battery",
     "hyprland/language",
     "pulseaudio",
     "custom/notifications",
@@ -35,7 +36,7 @@
     "format": " | "
   },
   "hyprland/workspaces": {
-    "format": " {icon}> {windows}",
+    "format": " {icon}: {windows}",
     "format-empty": "",
     "format-window-separator": " ",
     "window-rewrite-default": "",
@@ -164,5 +165,19 @@
     "return-type": "json",
     "exec": "echo '{\"text\":\"\",\"class\":\"notifications\"}'",
     "interval": 30
+  },
+  "battery": {
+    "format": "{capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "🔌 {capacity}%",
+    "format-alt": "{time} до {icon}",
+    "interval": 10,
+    "icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   }
 }

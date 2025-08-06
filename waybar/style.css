@@ -60,6 +60,7 @@ tooltip {
 #disk,
 #custom-webmenu,
 #custom-notifications,
+#battery,
 #tray {
     background: #1e1e2e;
     opacity: 1.0;
@@ -147,6 +148,11 @@ tooltip {
     margin-right: 5px;
 }
 #custom-notifications {
+    border-radius: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#battery {
     border-radius: 13px;
     margin-left: 5px;
     margin-right: 5px;
