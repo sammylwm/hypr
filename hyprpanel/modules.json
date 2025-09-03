@@ -1,0 +1,22 @@
+{
+  "custom/vpn": {
+    "icon": [
+      "🛡️"
+    ],
+    "label": "{status}",
+    "tooltip": "VPN Status: {status}",
+    "truncationSize": -1,
+    "execute": "/home/sammy/vpn/vpn-status.sh | xargs -I{} echo '{\"status\": \"{}\"}'",
+    "executeOnAction": "",
+    "interval": 1000,
+    "hideOnEmpty": true,
+    "scrollThreshold": 1,
+    "actions": {
+      "onLeftClick": "/home/sammy/vpn/vpn-toggle.sh",
+      "onRightClick": "",
+      "onMiddleClick": "",
+      "onScrollUp": "",
+      "onScrollDown": ""
+    }
+  }
+}

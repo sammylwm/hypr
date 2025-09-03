@@ -1,11 +1,10 @@
-
 * {
-    border: none;
-    border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
-    font-weight: bold;
-    font-size: 16px;
-    min-height: 0;
+border: none;
+border-radius: 10px;
+font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
+font-weight: bold;
+font-size: 16px;
+min-height: 0;
 }
 
 window#waybar {
@@ -19,33 +18,11 @@ window#waybar {
 tooltip {
     background: #000000;
     border-radius: 7px;
-    border-width: 2.5px;
-    border-style: solid;
-    border-color: #8aadf4;
+    border: 2.5px solid #8aadf4;
     padding: 5px;
 }
 
-
-#workspaces button {
-    color: #ffffff;
-    margin-right: 5px;
-}
-
-#workspaces button.active {
-    color: #89b4fa;
-}
-
-
-#workspaces button.active,
-#workspaces button.visible {
-    color: #89b4fa;
-    box-shadow: inset 0 -1px #1e1e2e;
-}
-
-#workspaces button.urgent {
-    color: #f38ba8;
-}
-
+/* Общие стили для модулей */
 #custom-weather,
 #language,
 #cpu,
@@ -61,99 +38,77 @@ tooltip {
 #custom-webmenu,
 #custom-notifications,
 #battery,
-#tray {
-    background: #1e1e2e;
-    opacity: 1.0;
-    padding: 7px;
-    margin: 5px;
-    border-radius: 13px;
+#bluetooth,
+#network {
+background: #1e1e2e;
+opacity: 1.0;
+padding: 7px;
+margin: 5px;
+border-radius: 13px;
 }
 
+/* Workspaces */
 #workspaces {
-    background: #1e1e2e;
-    border-radius: 13px;
-    margin-left: 5px;
-    padding-right: 5px;
+padding-right: 5px;
 }
 
 #workspaces button {
-    margin: 3px;
-    border-radius: 10px;
-    padding: 4px;
+color: #ffffff;
+margin: 3px;
+border-radius: 10px;
+padding: 4px;
 }
 
+#workspaces button.active,
+#workspaces button.visible {
+color: #89b4fa;
+box-shadow: inset 0 -1px #1e1e2e;
+}
+
+#workspaces button.urgent {
+color: #f38ba8;
+}
+
+#workspaces button:hover {
+background: #313244;
+color: #a6e3a1;
+}
+
+/* Window */
 #window {
-    border-radius: 7px;
-    margin-left: 60px;
-    margin-right: 60px;
+border-radius: 7px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
+/* Индивидуальные цвета */
 #clock {
-    color: #a6e3a1;
-    border-radius: 13px;
-}
-
-#network {
-    color: #f9e2af;
-    border-radius: 7px 7px 7px 7px;
-    margin-right: 5px;
+color: #a6e3a1;
 }
 
 #custom-notifications {
-    color: #f9e2af;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 9px;
-    padding-right: 15px;
-    margin-left: 2px;
-    margin-right: 2px;
+color: #f9e2af;
+padding-left: 9px;
+padding-right: 15px;
 }
 
 #custom-player {
-    color: #cba6f7;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 4px;
-    margin-left: 5px;
-    margin-right: 5px;
+color: #cba6f7;
+border-radius: 7px;
+padding-left: 4px;
+margin: 5px;
 }
 
 #bluetooth {
-    color: #89b4fa;
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
+color: #89b4fa;
 }
 
 #pulseaudio {
-    color: #89b4fa;
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
+color: #89b4fa;
 }
-
-#language {
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#custom-vpn {
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#custom-webmenu {
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#custom-notifications {
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#battery {
-    border-radius: 13px;
-    margin-left: 5px;
-    margin-right: 5px;
+#pulseaudio:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover {
+background: #313244;
 }

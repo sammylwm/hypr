@@ -6,21 +6,23 @@
   "margin-top": 10,
   "margin-left": 10,
   "margin-right": 10,
-  "height": 41,
+  "height": 61,
   "modules-left": [
     "hyprland/workspaces"
   ],
   "modules-center": [
+    "cava",
     "clock"
   ],
   "modules-right": [
     "custom/webmenu",
     "custom/vpn",
+    "network",
     "battery",
     "hyprland/language",
+    "bluetooth",
     "pulseaudio",
     "custom/notifications",
-    "separator",
     "tray"
   ],
   "tray": {
@@ -31,9 +33,6 @@
   "custom/spacer": {
     "format": " ",
     "tooltip": false
-  },
-  "separator": {
-    "format": " | "
   },
   "hyprland/workspaces": {
     "format": " {icon}: {windows}",
@@ -50,7 +49,13 @@
       ".*ayugram.*": "\uF2C6",
       ".*jetbrains-idea.*": "\uE7B5",
       ".*jetbrains-pycharm.*": "\uE877",
-      ".*Chromium.*": ""
+      ".*Chromium.*": "",
+      ".*jetbrains-webstorm.*": "\uE7B5",
+      ".*Settings.*": "",
+  	  ".*Welcome.*": "",
+  	  ".*Open Project.*": "",
+
+
     },
     "sort-by-number": true,
     "persistent-workspaces": {
@@ -179,5 +184,8 @@
       "",
       ""
     ]
+  },
+  "network": {
+    "format": "(ᯤ)"
   }
 }

@@ -33,6 +33,7 @@
         "cava"
       ],
       "right": [
+        "custom/vpn",
         "bluetooth",
         "battery",
         "volume",
@@ -138,4 +139,7 @@
   "bar.battery.hideLabelWhenFull": false,
   "bar.network.truncation": false,
   "menus.volume.raiseMaximumVolume": false,
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
