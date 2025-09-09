@@ -55,20 +55,6 @@
         "clock",
         "notifications"
       ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
-      ]
     }
   },
   "menus.clock.time.military": true,
