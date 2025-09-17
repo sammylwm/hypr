@@ -11,13 +11,12 @@
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "cava",
-    "clock"
+    "clock",
+    "custom/player"
   ],
   "modules-right": [
     "custom/webmenu",
     "custom/vpn",
-    "network",
     "battery",
     "hyprland/language",
     "bluetooth",
@@ -52,10 +51,8 @@
       ".*Chromium.*": "",
       ".*jetbrains-webstorm.*": "\uE7B5",
       ".*Settings.*": "",
-  	  ".*Welcome.*": "",
-  	  ".*Open Project.*": "",
-
-
+      ".*Welcome.*": "",
+      ".*Open Project.*": ""
     },
     "sort-by-number": true,
     "persistent-workspaces": {
@@ -185,7 +182,28 @@
       ""
     ]
   },
-  "network": {
-    "format": "(ᯤ)"
+  "mpris": {
+    "interval": 1,
+    "format": "{dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "on-click": "playerctl play-pause",
+    "on-scroll-down": "playerctl previous",
+    "on-scroll-up": "playerctl next",
+    "scrolling": true,
+    "scrolling-speed": 0.03,
+    "scrolling-separator": "   ",
+
+  },
+  "custom/player": {
+    "interval": 2,
+    "exec": "playerctl metadata --format '{{artist}} - {{title}}' 2>/dev/null || echo '⏸️'",
+    "return-type": "plain",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "scrolling": true,
+    "scrolling-speed": 0.03,
+    "scrolling-separator": "   "
   }
+
 }
