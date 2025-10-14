@@ -1,1 +1,56 @@
-/home/sammy/.config/hypr/cli.json
+{
+    "record": {
+        "extraArgs": []
+    },
+    "theme": {
+        "enableTerm": true,
+        "enableHypr": true,
+        "enableDiscord": true,
+        "enableSpicetify": true,
+        "enableFuzzel": true,
+        "enableBtop": true,
+        "enableGtk": true,
+        "enableQt": true
+    },
+    "toggles": {
+        "communication": {
+            "telegram": {
+                "enable": true,
+                "match": [
+                    { "class": "org.telegram.desktop" },
+                    { "class": "TelegramDesktop" }
+                ],
+                "command": ["Telegram"],
+                "move": true
+            }
+        },
+        "music": {
+            "spotify": {
+                "enable": true,
+                "match": [
+                    { "class": "Spotify" },
+                    { "initialTitle": "Spotify" },
+                    { "initialTitle": "Spotify Free" }
+                ],
+                "command": ["spicetify", "watch", "-s"],
+                "move": true
+            }
+        },
+        "todo": {
+            "obsidian": {
+                "enable": true,
+                "match": [{ "class": "obsidian" }],
+                "command": ["obsidian"],
+                "move": true
+            }
+        },
+        "vpn": {
+            "hiddify": {
+                "enable": true,
+                "match": [{ "class": "hiddify" }],
+                "command": ["/home/sammy/hypr/scripts/vpn_start.sh"],
+                "move": true
+            }
+        }
+    }
+}
