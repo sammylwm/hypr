@@ -1,10 +1,1 @@
-alias c="clear"
-alias ls="exa"
-alias aliascf="nano ~/hypr/aliases/alias"
-alias hs="history | grep --color=auto "
-alias sshp="ssh lednevs.ru -p 1009"
-alias cpfile="kitty +kitten clipboard "
-alias dc="docker compose"
-alias almrev="alembic revision --autogenerate -m"
-alias almup="alembic upgrade head"
-alias vpn="/home/sammy/vpn/vpn-toggle.sh"
+source ~/.config/fish/alias.fish

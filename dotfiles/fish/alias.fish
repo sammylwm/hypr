@@ -1,0 +1,8 @@
+alias c="clear"
+alias ls="exa"
+alias aliascf="nano ~/hypr/dotfiles/fish/alias.fish"
+alias hs="history | grep --color=auto "
+alias sshp="ssh lednevs.ru -p 1009"
+alias dc="docker compose"
+alias almrev="alembic revision --autogenerate -m"
+alias almup="alembic upgrade head"
