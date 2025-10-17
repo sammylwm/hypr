@@ -48,7 +48,7 @@
             "hiddify": {
                 "enable": true,
                 "match": [{ "class": "hiddify" }],
-                "command": ["/home/sammy/hypr/scripts/vpn_start.sh"],
+                "command": ["vpn_start"],
                 "move": true
             }
         }

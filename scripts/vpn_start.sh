@@ -1,8 +1,0 @@
-#!/bin/bash
-
-export DISPLAY=:1
-export WAYLAND_DISPLAY=wayland-1
-export XDG_SESSION_TYPE=wayland
-export XDG_RUNTIME_DIR=/run/user/1000
-
-pkexec env DISPLAY=$DISPLAY WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_SESSION_TYPE=$XDG_SESSION_TYPE XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR hiddify >> /tmp/hiddify.log 2>&1
