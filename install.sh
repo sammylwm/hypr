@@ -20,7 +20,7 @@ done
 hyprctl reload >/dev/null 2>&1
 
 # Список требуемых программ
-packages="caelestia-shell-git caelestia-cli foot"
+packages="caelestia-shell-git caelestia-cli foot ttf-jetbrains-mono-nerd"
 
 is_installed() {
     if pacman -Q "$1" >/dev/null 2>&1; then
