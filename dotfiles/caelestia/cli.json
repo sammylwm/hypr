@@ -34,6 +34,16 @@
                 ],
                 "command": ["spicetify", "watch", "-s"],
                 "move": true
+            },
+            "cassette": {
+                "enable": true,
+                "match": [
+                    { "class": "Cassette" },
+                    { "initialTitle": "Cassette" },
+                    { "initialTitle": "Cassette" }
+                ],
+                "command": ["cassete", "watch"],
+                "move": true
             }
         },
         "todo": {
