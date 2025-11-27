@@ -1,5 +1,27 @@
 #!/bin/bash
 
+# Проверяем, что передан ровно один аргумент
+if [ "$#" -ne 1 ]; then
+    echo "Использование: $0 <аргумент>"
+    exit 1
+fi
+
+case "$1" in
+    caelestia)
+        ~/hypr/scripts/caelestia_install.sh
+        ;;
+    end4)
+        ~/hypr/scripts/end4_install.sh
+        ;;
+    vpn)
+        ~/hypr/scripts/vpn_install.sh
+        ;;
+    *)
+        echo "Допустимые значения: caelestia, end4"
+        exit 1
+        ;;
+esac
+
 echo "🧰 Copying all dotfiles..."
 
 for dir in "$HOME/hypr/dotfiles"/*; do
@@ -17,24 +39,7 @@ for dir in "$HOME/hypr/dotfiles"/*; do
     fi
 done
 
+
+
 hyprctl reload >/dev/null 2>&1
 
-# Список требуемых программ
-packages="caelestia-shell-git caelestia-cli foot ttf-jetbrains-mono-nerd"
-
-is_installed() {
-    if pacman -Q "$1" >/dev/null 2>&1; then
-        return 0
-    else
-        return 1
-    fi
-}
-
-for pkg in $packages; do
-    if ! is_installed "$pkg"; then
-        echo "Пакет $pkg не установлен. Устанавливаю через paru..."
-        paru -S --needed --noconfirm "$pkg"
-    else
-        echo "Пакет $pkg уже установлен."
-    fi
-done
