@@ -1,0 +1,44 @@
+#!/bin/sh
+
+get_app_config() {
+    case "$1" in
+        music)
+            printf 'YandexMusic|/opt/yandex-music/yandexmusic --gtk-version=3\n'
+            ;;
+        telegram)
+            printf 'org.telegram.desktop|Telegram\n'
+            ;;
+        vpn)
+            printf 'hiddify|vpn_start\n'
+            ;;
+        obsidian)
+            printf 'obsidian|obsidian\n'
+            ;;
+        *)
+            printf 'unknown|\n'
+            ;;
+    esac
+}
+
+config=$(get_app_config "$1")
+app_class="${config%|*}"
+app_command="${config#*|}"
+
+if [ "$app_class" = "unknown" ] || [ -z "$1" ] || [ "$app_command" = "$config" ]; then
+    echo "Использование: $0 [music|telegram|vpn|obsidian]"
+    exit 1
+fi
+
+# --- Проверяем, запущено ли окно с таким классом ---
+if hyprctl clients -j | jq -e ".[] | select(.class == \"$app_class\")" >/dev/null 2>&1; then
+    echo "$1 уже запущено"
+else
+    echo "Запускаем $1..."
+    # Запускаем в фоне
+    echo $app_command
+    $app_command >/dev/null 2>&1 &
+fi
+
+# --- Переключаем special workspace с тем же именем ---
+hyprctl dispatch togglespecialworkspace "$1"
+echo "$1"
