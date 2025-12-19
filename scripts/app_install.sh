@@ -21,3 +21,4 @@ done
 echo "Чтобы установить venv on выполни это:"
 
 echo "fisher install jorgebucaran/fisher"
+echo "fisher install jorgebucaran/autopair.fish"
