@@ -6,8 +6,7 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-paru -S fisher
-fisher install vladhaidukkk/fish-venv
+~/hypr/scripts/app_install.sh
 
 case "$1" in
     caelestia)
