@@ -6,7 +6,7 @@ get_app_config() {
             printf 'YandexMusic|/opt/yandex-music/yandexmusic --gtk-version=3\n'
             ;;
         telegram)
-            printf 'org.telegram.desktop|Telegram\n'
+            printf 'com.ayugram.desktop|AyuGram\n'
             ;;
         vpn)
             printf 'hiddify|vpn_start\n'
